@@ -46,3 +46,15 @@ entrepreneurBtn?.addEventListener("click", () => {
     freedomProgressValue!.style.width = progressValues.entrepreneur.freedom;
     riskProgressValue!.style.width = progressValues.entrepreneur.risk;
 });
+
+let fullScreenBtn = document.getElementById("full-screen");
+let isFullScreen = false;
+fullScreenBtn?.addEventListener("click", () => {
+    if (isFullScreen) {
+        document.exitFullscreen();
+        isFullScreen = false;
+    } else {
+        document.documentElement.requestFullscreen();
+        isFullScreen = true;
+    }
+});

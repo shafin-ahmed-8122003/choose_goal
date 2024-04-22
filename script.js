@@ -43,3 +43,15 @@ entrepreneurBtn === null || entrepreneurBtn === void 0 ? void 0 : entrepreneurBt
     freedomProgressValue.style.width = progressValues.entrepreneur.freedom;
     riskProgressValue.style.width = progressValues.entrepreneur.risk;
 });
+var fullScreenBtn = document.getElementById("full-screen");
+var isFullScreen = false;
+fullScreenBtn === null || fullScreenBtn === void 0 ? void 0 : fullScreenBtn.addEventListener("click", function () {
+    if (isFullScreen) {
+        document.exitFullscreen();
+        isFullScreen = false;
+    }
+    else {
+        document.documentElement.requestFullscreen();
+        isFullScreen = true;
+    }
+});
