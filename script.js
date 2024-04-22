@@ -55,3 +55,14 @@ fullScreenBtn === null || fullScreenBtn === void 0 ? void 0 : fullScreenBtn.addE
         isFullScreen = true;
     }
 });
+document.addEventListener("DOMContentLoaded", function () {
+    var darkModeBtn = document.getElementById("dark");
+    darkModeBtn === null || darkModeBtn === void 0 ? void 0 : darkModeBtn.addEventListener("click", function () {
+        if (document.documentElement.classList.contains("dark")) {
+            document.documentElement.classList.remove("dark");
+        }
+        else {
+            document.documentElement.classList.add("dark");
+        }
+    });
+});

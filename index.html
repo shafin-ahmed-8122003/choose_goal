@@ -6,16 +6,20 @@
         <title>Choose Goal</title>
         <link rel="stylesheet" href="output.css" />
     </head>
-    <body class="bg-gray-200 grid place-items-center h-screen">
-        <button
-            id="full-screen"
-            class="fixed top-10 right-10 w-10 h-10 ring-1 ring-slate-300 rounded-md shadow-lg"
-        >
-            F
-        </button>
+    <body class="bg-gray-200 grid place-items-center h-screen dark:bg-stone-800">
+        <div class="tools fixed top-0 w-screen flex justify-end space-x-2 p-2">
+            <button id="full-screen" class="btn">
+                <img src="./full.png" width="25" alt="" />
+            </button>
+            <button id="dark" class="btn" onclick="document.body.classList.toggle('dark')">
+                <img src="./dark.png" width="25" alt="" />
+            </button>
+        </div>
 
-        <main class="ring-2 ring-slate-300 p-5 rounded-xl shadow-xl flex flex-col items-center">
-            <h1 class="text-xl font-bold text-slate-600">Choose Goal</h1>
+        <main
+            class="ring-2 ring-slate-300 p-5 rounded-xl shadow-xl dark:shadow-white/10 flex flex-col items-center"
+        >
+            <h1 class="text-xl font-bold text-slate-600 dark:text-slate-300">Choose Goal</h1>
             <div class="goals flex justify-center items-center my-5 space-x-3">
                 <label for="employee" class="cursor-pointer">
                     <input id="employee" type="radio" class="peer sr-only" name="goal" />

@@ -58,3 +58,14 @@ fullScreenBtn?.addEventListener("click", () => {
         isFullScreen = true;
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    let darkModeBtn = document.getElementById("dark");
+    darkModeBtn?.addEventListener("click", () => {
+        if (document.documentElement.classList.contains("dark")) {
+            document.documentElement.classList.remove("dark");
+        } else {
+            document.documentElement.classList.add("dark");
+        }
+    });
+});
