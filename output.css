@@ -582,6 +582,14 @@ video {
   --tw-ring-color: rgb(239 68 68 / var(--tw-ring-opacity));
 }
 
+@media not all and (min-width: 640px) {
+  .choice {
+    width: 6rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
 .progress-container {
   height: 1.25rem;
   width: 16rem;
@@ -597,6 +605,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(203 213 225 / var(--tw-ring-opacity));
+}
+
+@media not all and (min-width: 640px) {
+  .progress-container {
+    width: 15rem;
+  }
 }
 
 .progress-value {
