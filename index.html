@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <title>Choose Goal</title>
+        <link rel="stylesheet" href="output.css" />
+    </head>
+    <body class="bg-gray-200 grid place-items-center h-screen">
+        <main class="ring-2 ring-slate-300 p-5 rounded-xl shadow-xl flex flex-col items-center">
+            <h1 class="text-xl font-bold text-slate-600">Choose Goal</h1>
+            <div class="goals flex justify-center items-center my-5 space-x-3">
+                <label for="employee" class="cursor-pointer">
+                    <input id="employee" type="radio" class="peer sr-only" name="goal" />
+                    <div class="choice">Employee</div>
+                </label>
+                <label for="freelancer" class="cursor-pointer">
+                    <input id="freelancer" type="radio" class="peer sr-only" name="goal" />
+                    <div class="choice">Freelancer</div>
+                </label>
+                <label for="entrepreneur" class="cursor-pointer">
+                    <input id="entrepreneur" type="radio" class="peer sr-only" name="goal" />
+                    <div class="choice">Entrepreneur</div>
+                </label>
+            </div>
+            <div class="stats w-full">
+                <div class="stat flex justify-between items-center">
+                    <label for="">Time</label>
+                    <div class="progress-container">
+                        <div id="time" class="progress-value w-[0%]"></div>
+                    </div>
+                </div>
+                <div class="stat flex justify-between items-center">
+                    <label for="">Money</label>
+                    <div class="progress-container">
+                        <div id="money" class="progress-value w-[0%]"></div>
+                    </div>
+                </div>
+                <div class="stat flex justify-between items-center">
+                    <label for="">Freedom</label>
+                    <div class="progress-container">
+                        <div id="freedom" class="progress-value w-[0%]"></div>
+                    </div>
+                </div>
+                <div class="stat flex justify-between items-center">
+                    <label for="">Risk</label>
+                    <div class="progress-container">
+                        <div id="risk" class="progress-value w-[0%]"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
